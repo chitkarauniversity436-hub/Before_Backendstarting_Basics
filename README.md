@@ -37,6 +37,8 @@ So we can say:
 Synchronous = wait for the current task to finish before starting the next task.
 
 
+
+
 2). Why do we need Asynchronous JavaScript?
 
 Imagine this:
