@@ -66,3 +66,40 @@ These operations can take time.
 If JavaScript waited for every operation, your application could become slow.
 
 That's why we have asynchronous JavaScript.
+
+
+3).Asynchronous JavaScript
+
+Asynchronous means:
+
+Start a time-consuming task and don't necessarily block the rest of the program while waiting for it.
+
+Example:
+
+console.log("Start");
+
+setTimeout(() => {
+    console.log("Task completed");
+}, 2000);
+
+console.log("End");
+
+Output:
+
+Start
+End
+Task completed
+
+Notice something important:
+
+Start
+ ↓
+setTimeout starts
+ ↓
+End
+ ↓
+2 seconds later
+ ↓
+Task completed
+
+JavaScript didn't wait for the 2 seconds.
