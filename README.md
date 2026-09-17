@@ -229,3 +229,40 @@ The function:
 is a callback.
 
 It is executed later.
+
+8). Why callbacks became a problem
+
+Suppose you have several asynchronous operations.
+
+getUser(function(user) {
+
+    getOrders(user, function(orders) {
+
+        getPayment(orders, function(payment) {
+
+            sendEmail(payment, function() {
+
+                console.log("Done");
+
+            });
+
+        });
+
+    });
+
+});
+
+It becomes deeply nested.
+
+This is called:
+
+Callback Hell 😵
+
+It can become difficult to:
+
+Read
+Debug
+Maintain
+Handle errors
+
+That's one reason Promises became important.
