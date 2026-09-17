@@ -176,3 +176,36 @@ Event Loop + Runtime APIs
 Handles asynchronous operations
 
 You'll study the Node.js Event Loop in your syllabus later.
+
+6). Callback
+
+Now we come to callbacks.
+
+A callback is simply:
+
+A function that we give to another function so that it can be called later.
+
+Example:
+
+function greet(name, callback) {
+    console.log("Hello " + name);
+
+    callback();
+}
+
+function finish() {
+    console.log("Finished");
+}
+
+greet("Tarun", finish);
+
+Output:
+
+Hello Tarun
+Finished
+
+Here:
+
+finish
+
+is passed as a callback.
