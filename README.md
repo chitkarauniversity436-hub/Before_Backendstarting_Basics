@@ -103,3 +103,41 @@ End
 Task completed
 
 JavaScript didn't wait for the 2 seconds.
+
+
+
+4).setTimeout()
+
+setTimeout() is an easy way to understand asynchronous behavior.
+
+setTimeout(() => {
+    console.log("Hello");
+}, 2000);
+
+This means:
+
+Execute this function after approximately 2 seconds.
+
+Example:
+
+console.log("1");
+
+setTimeout(() => {
+    console.log("2");
+}, 2000);
+
+console.log("3");
+
+Output:
+
+1
+3
+2
+
+Not:
+
+1
+2
+3
+
+because the callback inside setTimeout runs later.
