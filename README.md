@@ -141,3 +141,38 @@ Not:
 3
 
 because the callback inside setTimeout runs later.
+
+5). Important: JavaScript is Single-Threaded
+
+This is an important backend concept.
+
+JavaScript traditionally executes your JavaScript code using one main thread.
+
+You can imagine:
+
+JavaScript
+    │
+    ▼
+One main worker
+
+So you may ask:
+
+"Then how can JavaScript handle multiple things?"
+
+That's where the JavaScript runtime environment comes in.
+
+In the browser, this involves browser APIs.
+
+In Node.js, Node provides mechanisms such as its event loop and asynchronous I/O facilities.
+
+For now, remember:
+
+JavaScript
+    ↓
+Executes JavaScript code
+    ↓
+Event Loop + Runtime APIs
+    ↓
+Handles asynchronous operations
+
+You'll study the Node.js Event Loop in your syllabus later.
