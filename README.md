@@ -209,3 +209,23 @@ Here:
 finish
 
 is passed as a callback.
+
+
+7). Callback with setTimeout
+console.log("Start");
+
+setTimeout(() => {
+    console.log("Data received");
+}, 2000);
+
+console.log("End");
+
+The function:
+
+() => {
+    console.log("Data received");
+}
+
+is a callback.
+
+It is executed later.
