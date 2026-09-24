@@ -1,5 +1,5 @@
 # Before_Backendstarting_Basics 
-//
+// Do it before 25
 
 1). Synchronous JavaScript
 
