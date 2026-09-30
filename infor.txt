@@ -47,7 +47,12 @@ const arg = process.argv ;
 
 for example you can input port no every time by the user
 const p =  process.argv;
-const port = p[2] ;
-server.listen(port)
+const port = p[2] ;  >> nodemon server.js 3000 
+server.listen(port) ;
+
+
+
+
+
 
 
