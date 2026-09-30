@@ -15,3 +15,21 @@ http.createServer((req,res)=>{
     
     res.end();
 }).listen(3000)
+
+
+
+
+4) for Example
+const data = [ {name:"tarun" , age:20} , {..} , {..}] ;  // array of object  
+
+const http = require('http');
+
+http.createServer((req,res)=>{
+    res.writeHead("Content-Type","application/json");
+    res.write(JSON.stringify(data));
+    res.end();  
+  
+}).listen(3000)
+
+
+
