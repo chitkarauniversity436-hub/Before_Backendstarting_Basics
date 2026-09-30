@@ -31,6 +31,8 @@ http.createServer((req,res)=>{
   
 }).listen(3000)
 
+// JSON.stringify(data) converts the JavaScript object/array into a JSON string so it can be sent as an HTTP response.
+
 
 //Stringify = make it a string
 //Parse = convert the string back into an object
