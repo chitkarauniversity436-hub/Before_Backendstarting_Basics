@@ -1,1 +1,17 @@
-You can run multiple servers in node.js -> just make sure to run on different ports ...
+1) You can run multiple servers in node.js -> just make sure to run on different ports ...
+
+2) client makes the request to the server and server give the response back to the client(Browser)
+
+3) <->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->-<->->CODE<-<->-<->-<->-<-<->->-<->-<->->-<->-<->-<->-<->-<->-<->->
+
+const http = require('http');
+
+http.createServer((req,res)=>{
+    // first you have to set the Type of response we are sending to the client
+    res.setHeader('Content-Type','text/html');
+
+    // then write the response to the client
+    res.write("<h1>Heading 1</h1>");
+    
+    res.end();
+}).listen(3000)
