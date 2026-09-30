@@ -38,3 +38,16 @@ http.createServer((req,res)=>{
 //Parse = convert the string back into an object
 
 
+//
+const arg = process.argv ;
+// process.argv -> contains array  
+// index[0] -> Node path
+// index[1] -> file path 
+// inedx[2] -> Actual input value 
+
+for example you can input port no every time by the user
+const p =  process.argv;
+const port = p[2] ;
+server.listen(port)
+
+
