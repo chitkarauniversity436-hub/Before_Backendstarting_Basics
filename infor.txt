@@ -32,4 +32,7 @@ http.createServer((req,res)=>{
 }).listen(3000)
 
 
+//Stringify = make it a string
+//Parse = convert the string back into an object
+
 
